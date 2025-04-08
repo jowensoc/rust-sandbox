@@ -1,3 +1,5 @@
+use core::panic;
+
 use rust_sandbox::structs::employee::Employee;
 
 fn main() {
@@ -7,6 +9,8 @@ fn main() {
     print_employee("Laura".to_string(), "Smith".to_string(), "Business Analyst".to_string(), "Product Delivery".to_string());
     print_employee("David".to_string(), "Smith".to_string(), "Product Manager".to_string(), "Product Delivery".to_string());
     print_employee("Jane".to_string(), "Smith".to_string(), "QA Tester".to_string(), "Software Delivery".to_string());
+
+    panic!("Something broke!");
 }
 
 fn print_employee(first_name: String, last_name: String, role: String, department: String) {

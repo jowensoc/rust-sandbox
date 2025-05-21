@@ -13,4 +13,10 @@ impl Employee {
         &self.role.to_string(), 
         &self.department.to_string())
     }
+
+    pub fn surname_forename_to_string(&self) -> String {
+        format!("{}, {}", 
+        &self.last_name.to_string(),
+        &self.first_name.to_string())
+    }
 }

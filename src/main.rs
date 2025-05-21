@@ -18,5 +18,5 @@ fn print_employee(first_name: String, last_name: String, role: String, departmen
         department
     };
 
-    println!("{}", employee.to_string());
+    println!("{}", employee.surname_forename_to_string());
 }

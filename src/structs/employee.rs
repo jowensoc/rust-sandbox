@@ -19,4 +19,10 @@ impl Employee {
         &self.last_name.to_string(),
         &self.first_name.to_string())
     }
+
+        pub fn name_to_string(&self) -> String {
+        format!("{} {}", 
+        &self.first_name.to_string(), 
+        &self.last_name.to_string())
+    }
 }

@@ -1,3 +1,4 @@
+#[cfg(test)]
 mod employee_helper_test {
     use rust_sandbox::structs::employee::Employee;
     use rust_sandbox::helpers::employee_helper::build_employee;
